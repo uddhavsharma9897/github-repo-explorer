@@ -1,16 +1,102 @@
-# React + Vite
+# GitHub Repo Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This is a full-stack GitHub Repository Explorer built using React.js, Node.js, and Express.js.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Users can search for any GitHub username and view:
 
-## React Compiler
+* Profile information
+* Followers count
+* Public repositories
+* Repository details including stars, forks, and language
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The frontend communicates with a Node.js backend which fetches data from the GitHub API.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+### Frontend
+
+* React.js
+* Vite
+
+### Backend
+
+* Node.js
+* Express.js
+
+### API
+
+* GitHub REST API
+
+### Libraries
+
+* Axios
+* Cors
+
+---
+
+## Features
+
+* Search GitHub users
+* View profile details
+* View repository list
+* Display stars and forks
+* Backend API integration
+* Error handling for invalid users
+
+---
+
+## Project Structure
+
+github-explorer/
+
+client:
+
+* React frontend
+
+server:
+
+* Express backend
+* GitHub API routes
+
+src:
+
+* React components and UI
+
+---
+
+## How To Run
+
+Frontend:
+
+npm install
+
+npm run dev
+
+Backend:
+
+cd server
+
+npm install
+
+node server.js
+
+---
+
+## Future Improvements
+
+* Repository sorting
+* Loading spinner
+* Pagination
+* Dark/Light mode
+* Repository search
+* Caching API responses
+
+---
+
+## Author
+
+Uddhav Sharma
